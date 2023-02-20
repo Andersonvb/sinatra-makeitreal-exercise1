@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'erb'
 
-get '/' do 
+get '/:name' do 
+  @name = params[:name]
   erb :index
 end
