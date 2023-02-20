@@ -5,6 +5,6 @@
     <title>Saludame 1 Exercise</title>
   </head>
   <body>
-    <h1><%= @name %></h1>
+    <h1><%= params[:name] ? params[:name] : "" %></h1>
   </body>
 </html>
